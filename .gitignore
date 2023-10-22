@@ -3,7 +3,7 @@ package-lock.json
 package.json
 config/*
 data/*
-src/img*
+src/img/*
 task/*
 gulpfile.js
 
