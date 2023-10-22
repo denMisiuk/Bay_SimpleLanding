@@ -1,0 +1,79 @@
+
+
+.lines {
+margin: 0 auto;
+height: auto;
+@media (min-width: 769px){height: 20em;}
+//border-radius: 10px;
+overflow: hidden;
+background: url(../../img/topBack2.png) 0 0/cover no-repeat;
+		&__box {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         color: black;
+         text-align: center;
+         height: 100%;
+         @include tablets {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+         }
+         @include phones {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit, auto);
+         }
+      }
+
+         &__item{
+            display: grid;
+            grid-template-rows: auto auto minmax(auto, 3fr);
+            background-color: rgba($color: white, $alpha: 0.4);
+            overflow: hidden;
+            
+            
+            border: 1px wheat solid;
+            border-radius: 10px;
+            transition: all 1s;
+            @media (min-width: 769px){& > *{padding-bottom: 1.5rem;}}
+            
+
+            @include tablets{
+               & > *{ margin-bottom: 1rem;}
+            }
+            @include phones {&:last-child{border-radius: 10px 10px 0 0;}}
+            
+
+            @media (min-width: 769px) {
+               height: 3em;
+               
+               &:hover{
+                  height: 100%;
+                  p{opacity: 1;}
+            }  
+            }
+            
+         h3{
+            
+            line-height: 1.3em;
+            font-size: 2em;
+            text-transform: uppercase;
+            @include tablets {
+               padding-top: 0.5rem;
+            }
+         }
+
+         img{height: 50px;
+         width: 50px;
+         border-radius: 50%;
+         border: 0.5px solid black;
+      //margin-bottom: 1em;
+   }
+
+         p{
+            //opacity: 0;
+            padding: 0 10px;
+            font-weight: 600;
+         }
+
+
+		}
+}

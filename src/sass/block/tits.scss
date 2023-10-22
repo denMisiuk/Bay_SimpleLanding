@@ -1,0 +1,112 @@
+
+
+.tits {
+position: relative;
+@include phones {margin-top: -25px;}
+		&__buttons {
+         display: flex;
+			margin-top: -50px;
+			position: relative;
+			justify-content: space-around;
+			@include tablets {
+				margin-top: -40px;
+			}
+			@include phones {
+				margin-top: -25px;
+			}
+		}
+
+		&__item {
+			background-color: black;
+         height: 100px;
+         width: 100px;
+         border: 3px solid white;
+         border-radius: 50%;
+         overflow: hidden;
+
+         img{
+			height: 100%;
+         width: 100%;
+			opacity: 0.7;
+			transition: all 0.3s;
+			&:hover{opacity: 1; transform: rotate(7deg);}
+			&:active{opacity: 0.3;}
+		}
+
+		@include tablets {
+			height: 80px;
+         width: 80px;
+		}
+		@include phones {
+			height: 50px;
+         width: 50px;
+		}
+		}
+
+		&__content {
+		}
+}
+.titsbox {
+   margin-top: -50px;
+	font-family: 'PTSans';
+	@include tablets {margin-top: -40px; }
+	@include phones {margin-top: -25px;}
+		&__item {
+         
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         img{max-height: 500px;
+				width: 100%;
+				object-fit: cover;
+				//border: 2px wheat solid;
+				//border-radius: 0 0 0 5%;
+				@include desktops {//border-radius: 0 0 5% 5%;
+				}
+				}
+
+				@include desktops {
+					grid-template-columns: 1fr;
+					grid-template-rows: minmax(auto auto) 1fr;
+					}
+				
+		}
+
+		&__describe {
+			
+			font-size: 1.1em;
+         color: black;
+			padding-top: 5em;
+			//border: 2px wheat solid;
+			//border-radius: 0 0 5% 0;
+			background-color: $tits-desc;
+			
+			@include desktops {
+				grid-row: 1 / 2;
+				//border-radius: 0;
+				min-height: 45vh;
+			}
+		}
+
+		&__h3 {
+			font-size: 3em;
+			padding-bottom: 1em;
+			text-align: center;
+			@include desktops {
+				margin-top: -0.5em;
+				padding-bottom: 0.5em;
+			}
+		}
+
+		&__text {
+			text-align: left;
+			padding: 0 2rem 1rem 2rem;
+			line-height: 1.5em;
+			@include desktops {
+				padding: 0 3rem 1rem 3rem;
+			}
+		}
+}
+
+.nope{
+	display: none;
+}

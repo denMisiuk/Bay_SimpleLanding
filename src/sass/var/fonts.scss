@@ -1,0 +1,80 @@
+@font-face {
+     font-weight: 400;
+     font-style: normal;
+     font-family: 'PTSans';
+
+     src: url('../font/ptsans.woff2') format('woff2');
+     src: url('../font/ptsans.eot') format('embedded-opentype'),
+          url('../font/ptsans.otf') format('otf'),
+          url('../font/ptsans.svg') format('svg'),
+          url('../font/ptsans.ttf') format('truetype'),
+          url('../font/ptsans.woff') format('woff');
+}
+@font-face {
+     font-weight: 700;
+     font-style: normal;
+     font-family: 'PTSans';
+     src: url('../font/ptsansbold.woff2') format('woff2');
+     src: url('../font/ptsansbold.eot') format('embedded-opentype'),
+          url('../font/ptsansbold.otf') format('otf'),
+          url('../font/ptsansbold.svg') format('svg'),
+          url('../font/ptsansbold.ttf') format('truetype'),
+          url('../font/ptsansbold.woff') format('woff'); 
+}
+@font-face {
+     font-weight: 700;
+     font-style: normal;
+     font-family: 'Cuprum';
+     src: url('../font/Cuprum-Bold.woff2') format('woff2');
+     src: url('../font/Cuprum-Bold.eot') format('embedded-opentype'),
+          url('../font/Cuprum-Bold.otf') format('otf'),
+          url('../font/Cuprum-Bold.svg') format('svg'),
+          url('../font/Cuprum-Bold.ttf') format('truetype'),
+          url('../font/Cuprum-Bold.woff') format('woff');
+}
+@font-face {
+     font-weight: 700;
+     font-style: italic;
+     font-family: 'Cuprum';
+     src: url('../font/Cuprum-Bolditalic.woff2') format('woff2');
+     src: url('../font/Cuprum-Bolditalic.eot') format('embedded-opentype'),
+          url('../font/Cuprum-Bolditalic.otf') format('otf'),
+          url('../font/Cuprum-Bolditalic.svg') format('svg'),
+          url('../font/Cuprum-Bolditalic.ttf') format('truetype'),
+          url('../font/Cuprum-Bolditalic.woff') format('woff');
+}
+@font-face {
+     font-weight: 400;
+     font-style: italic;
+     font-family: 'Cuprum';
+     src: url('../font/Cuprum-Italic.woff2') format('woff2');
+     src: url('../font/Cuprum-Italic.eot') format('embedded-opentype'),
+          url('../font/Cuprum-Italic.otf') format('otf'),
+          url('../font/Cuprum-Italic.svg') format('svg'),
+          url('../font/Cuprum-Italic.ttf') format('truetype'),
+          url('../font/Cuprum-Italic.woff') format('woff');
+}
+@font-face {
+     font-weight: 400;
+     font-style: normal;
+     font-family: 'Cuprum';
+     src: url('../font/Cuprum-Regular.woff2') format('woff2');
+     src: url('../font/Cuprum-Regular.eot') format('embedded-opentype'),
+          url('../font/Cuprum-Regular.otf') format('otf'),
+          url('../font/Cuprum-Regular.svg') format('svg'),
+          url('../font/Cuprum-Regular.ttf') format('truetype'),
+          url('../font/Cuprum-Regular.woff') format('woff');
+}
+
+
+@font-face {
+     font-weight: 400;
+     font-style: normal;
+     font-family: 'Kat';
+     src: url('../font/Kat.woff2') format('woff2');
+     src: url('../font/Kat.eot') format('embedded-opentype'),
+          url('../font/Kat.otf') format('otf'),
+          url('../font/Kat.svg') format('svg'),
+          url('../font/Kat.ttf') format('truetype'),
+          url('../font/Kat.woff') format('woff');
+}

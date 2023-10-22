@@ -1,0 +1,127 @@
+
+.menu {
+   padding: 0 0 30% 0;
+   @include tablets {padding: 0 0 50% 0;};
+   @include desktops {padding: 0 0 40% 0;}
+   @include phones {padding: 0 0 100% 0;};
+
+
+   position: relative;
+   &__back {
+   }
+
+   &__box {
+      position: relative;
+      z-index: 10;
+
+      @include phones {
+         display: flex;
+         flex-direction: column-reverse;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+
+   &__logo {
+      display: inline-block;
+      color: $head-logo;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 4rem;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+
+      @include tablets {font-size: 2.5rem;}
+      @include phones {
+         position: relative;
+         top: 8rem;
+         left: 0;
+         font-size: 4rem;
+      }
+
+//Неон для лого---------------------------------------------------------------------------------------------------------------------------
+      text-shadow: 
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+      transition: all 0.25s;
+&:hover{
+text-shadow: 
+0 0 3px #fff,
+0 0 5px #fff,
+0 0 15px #fff,
+0 0 25px #0fa,
+0 0 55px #0fa,
+0 0 70px #0fa,
+0 0 90px #0fa,
+0 0 120px #0fa;}
+   }
+//-------------------------------------------------------------------------------------------------------------------------------------------
+   &__items {
+      position: absolute;
+      right: 0;
+      top: 2em;
+      transform: translate(50%, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include tablets {
+         transform: translate(0, 0);
+         align-items: flex-end;
+         
+      }
+      @include phones {
+         position: relative;
+         align-items: center;
+         flex-direction: row;
+         flex-wrap: wrap;
+         row-gap: 10px;
+         column-gap: 2em;
+         padding: 0 50px;
+         top: 1em;
+         justify-content: center;
+      }
+   }
+
+   &__item {
+      display: inline-block;
+      padding: 0 1em;
+      color: black;
+      border: 1px solid #000;
+      border-radius: 15px;
+      text-align: center;
+      line-height: 200%;
+      &:not(:last-child){margin-bottom: 7px;}
+      transition: all 1s;
+      &:hover{letter-spacing: .3em;}
+
+      @include tablets {border-radius: 15px 0px 0px 15px;
+      border: transparent;}
+
+      @include phones {
+         border-radius: 0.5em;
+         border: 1px solid #000;
+         padding: 0 1.5em;
+         font-size: 1.3rem;
+         &:not(:last-child){margin-bottom: 0px;}
+         &:hover{letter-spacing: 0;}
+      }
+
+//цвета для пунктов меню-------------------------------------------------------------------------------------------------------------------------------------------
+      &:nth-child(1){background-color:$menu-item-1;}
+      &:nth-child(2){background-color: $menu-item-2;}
+      &:nth-child(3){background-color: $menu-item-3;}
+      &:nth-child(4){background-color: $menu-item-4;}
+   }
+}
+.container {
+}
+.ibg {
+}

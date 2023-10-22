@@ -1,0 +1,106 @@
+
+.contacts {
+   background-color: $text-back;
+   color: $text-color;
+   border-radius: 0 0 15px 15px;
+
+
+
+		&__box {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr ;
+
+         @include desktops { 
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+         }
+         @include phones {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+         }
+		}
+
+		&__text {
+         padding: 10px 7px;
+         
+         h3{font-size: 1.5rem;
+         margin-bottom: .5rem;
+         }
+         @include phones{
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            text-align: center;
+         }
+         
+		}
+
+		&__buttons {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-end;
+         & > *:not(:last-child){margin-bottom: 0.3rem;}
+
+         @include desktops {grid-column: span 2;}
+		}
+
+		&__phone {
+         
+
+         color: $text-color;
+         transition: all 0.5s;
+         &:hover{color: red;}
+         p{padding-top: 3px;}
+		}
+
+		&__socials {
+         display: flex;
+         
+
+		}
+
+		&__social {
+         margin: 0 5px;
+         color: $text-color;
+         transition: all 0.5s;
+         &:hover{color: red;}
+         p{padding-top: 2px;}
+		}
+
+		&__logo {
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include desktops {
+
+         grid-column: 2 / 3;
+         grid-row: 1 / 2;
+      }
+      @include tablets {
+         font-size: 2rem;
+      }
+      @include phones{
+         font-size: 4rem;
+         grid-column: 1 / 2;
+         grid-row: 1 / 2;
+      }
+		}
+}
+.withsvg {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+
+   svg{fill: wheat;
+      height: 20px;
+      width: 20px;
+      transition: all 0.3s;
+      //&:hover{fill:  red;}
+      &:active{fill: black;}
+   }
+}
+
+
