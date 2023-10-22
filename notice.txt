@@ -1,0 +1,11 @@
+font-family: Ubuntu
+font-weight: 400;
+font-weight: 500;
+font-style: italic;
+
+font-family: Gilroy;
+font-weight: 800;
+font-weight: 300;
+
+
+container 1043/1440
